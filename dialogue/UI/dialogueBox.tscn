@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://b12xuakm2arek"]
+
+[ext_resource type="Script" uid="uid://djmulotq7i5bc" path="res://dialogue/dialoguebox.gd" id="1_xhvf2"]
+[ext_resource type="PackedScene" uid="uid://d3eaw75d7vnx3" path="res://dialogue/UI/choice.tscn" id="3_06ltf"]
+
+[node name="DialogueBox" type="Node2D" unique_id=419664994]
+script = ExtResource("1_xhvf2")
+choice_scene = ExtResource("3_06ltf")
+
+[node name="poly" type="Polygon2D" parent="." unique_id=1253619818]
+position = Vector2(0, -96)
+color = Color(0.07450981, 0.06666667, 0.08627451, 1)
+polygon = PackedVector2Array(-152, 96, 152, 96, 160, 88, 160, 96, 160, 8, 152, 0, -152, 0, -160, 8, -160, 88)
+
+[node name="Stalk" type="Polygon2D" parent="." unique_id=1348488984]
+color = Color(0.07450981, 0.06666667, 0.08627451, 1)
+polygon = PackedVector2Array(-72, 0, -64, 0, 32, 0, -56, 0)
+
+[node name="Control" type="Control" parent="." unique_id=38126597]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -160.0
+offset_top = -96.0
+offset_right = 160.0
+
+[node name="Label" type="RichTextLabel" parent="Control" unique_id=340001102]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+autowrap_mode = 2
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="choices" type="Node2D" parent="." unique_id=1775224838]

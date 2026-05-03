@@ -1,0 +1,1263 @@
+[gd_scene format=3 uid="uid://compij4uc8cy5"]
+
+[ext_resource type="Script" uid="uid://cpflqysrfcblh" path="res://rendering/animation/animationbaker/animation_baker.gd" id="1_3qcis"]
+[ext_resource type="Script" path="res://Visuals/ASCII/animated/animated_ascii.gd" id="1_xtbsf"]
+[ext_resource type="LabelSettings" path="res://Objects/Weapons/explosion_effects.tres" id="2_navh2"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_3qcis"]
+viewport_path = NodePath("SubViewport")
+
+[node name="AnimationBaker" type="Node" unique_id=1023811037 node_paths=PackedStringArray("animated")]
+script = ExtResource("1_3qcis")
+save_path = "res://baker"
+animated = NodePath("Animation/AnimatedExplosion_")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1874137502]
+offset_right = 256.0
+offset_bottom = 256.0
+color = Color(0.15997553, 0.15997553, 0.15997553, 1)
+
+[node name="Animation" type="Node2D" parent="." unique_id=2056694916]
+
+[node name="AnimatedExplosion_" type="Node2D" parent="Animation" unique_id=1828615215]
+position = Vector2(106, 128)
+scale = Vector2(2.2085793, 2.2085793)
+script = ExtResource("1_xtbsf")
+
+[node name="frame0" type="Node2D" parent="Animation/AnimatedExplosion_" unique_id=184705821]
+visible = false
+
+[node name="ASCII2" type="Label" parent="Animation/AnimatedExplosion_/frame0" unique_id=1656962222]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -15.0
+offset_right = 22.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII3" type="Label" parent="Animation/AnimatedExplosion_/frame0" unique_id=743392590]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = -13.0
+offset_right = 26.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "*"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="frame1" type="Node2D" parent="Animation/AnimatedExplosion_" unique_id=1883461041]
+visible = false
+
+[node name="ASCII2" type="Label" parent="Animation/AnimatedExplosion_/frame1" unique_id=1054301731]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -19.0
+offset_right = 18.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII4" type="Label" parent="Animation/AnimatedExplosion_/frame1" unique_id=598480217]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 25.0
+offset_top = -32.0
+offset_right = 75.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.6556623
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII5" type="Label" parent="Animation/AnimatedExplosion_/frame1" unique_id=1743052666]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = 5.999999
+offset_right = 40.0
+offset_bottom = 43.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.8541865
+pivot_offset = Vector2(24.723385, 10.60865)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII6" type="Label" parent="Animation/AnimatedExplosion_/frame1" unique_id=751505858]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = 9.999999
+offset_right = 16.0
+offset_bottom = 47.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 4.4767513
+pivot_offset = Vector2(24.723385, 10.60865)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII3" type="Label" parent="Animation/AnimatedExplosion_/frame1" unique_id=578747731]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = -13.0
+offset_right = 26.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "O"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="frame2" type="Node2D" parent="Animation/AnimatedExplosion_" unique_id=1619803633]
+visible = false
+
+[node name="ASCII2" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1653313756]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_right = -16.0
+offset_bottom = 37.000004
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.4770648
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII13" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=544672153]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = 73.0
+offset_right = 44.0
+offset_bottom = 110.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.9791837
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII14" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=986490944]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 66.0
+offset_top = -22.0
+offset_right = 116.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -3.8846595
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII3" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1146317267]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -44.0
+offset_right = 11.0
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII4" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=495844564]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 48.0
+offset_top = -42.0
+offset_right = 98.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.6556623
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "+"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII5" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1314819871]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 21.000004
+offset_top = 5.000005
+offset_right = 71.00001
+offset_bottom = 42.000004
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.8541865
+pivot_offset = Vector2(24.723385, 10.60865)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII15" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1648204357]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 43.0
+offset_top = 19.000002
+offset_right = 93.0
+offset_bottom = 56.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.8541865
+pivot_offset = Vector2(24.723385, 10.60865)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII16" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1639552960]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -36.0
+offset_right = 49.999996
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.8541865
+pivot_offset = Vector2(24.723385, 10.60865)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII6" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=354163828]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = 17.0
+offset_right = 4.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 4.4767513
+pivot_offset = Vector2(24.723385, 10.60865)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "+"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII8" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1783727170]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.777725
+offset_top = 24.429836
+offset_right = -11.777725
+offset_bottom = 61.42984
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.0207165
+scale = Vector2(0.6945328, 0.7792089)
+pivot_offset = Vector2(62.77773, -23.429836)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII17" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1012676382]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -67.10396
+offset_top = 25.38956
+offset_right = -17.103958
+offset_bottom = 62.38956
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -2.5228353
+scale = Vector2(0.6945328, 0.7792089)
+pivot_offset = Vector2(68.10396, -24.389557)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII18" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=381262277]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.197853
+offset_top = 30.75613
+offset_right = -11.197853
+offset_bottom = 67.756134
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -4.4283113
+scale = Vector2(0.6945328, 0.7792089)
+pivot_offset = Vector2(62.197853, -29.75613)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII9" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1912181644]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.207207
+offset_top = 1.3036499
+offset_right = -9.207207
+offset_bottom = 38.30365
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.54365176
+scale = Vector2(0.6945328, 0.7792089)
+pivot_offset = Vector2(60.20721, -0.30365026)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII10" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=105744343]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.356575
+offset_top = 7.628956
+offset_right = -12.356575
+offset_bottom = 44.628956
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.1120106
+scale = Vector2(0.6945328, 0.7792089)
+pivot_offset = Vector2(63.356583, -6.6289573)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "+"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII11" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=175039855]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.354965
+offset_top = 1.8522968
+offset_right = -19.354961
+offset_bottom = 38.852295
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.310535
+scale = Vector2(0.6945328, 0.7792089)
+pivot_offset = Vector2(70.354965, -0.8522956)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "`"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII19" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1166144625]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.43146
+offset_top = 1.7235336
+offset_right = -45.431458
+offset_bottom = 38.723534
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.310535
+scale = Vector2(0.6945328, 0.7792089)
+pivot_offset = Vector2(96.43145, -0.7235305)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII20" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1666761038]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.741787
+offset_top = 25.363934
+offset_right = 20.25821
+offset_bottom = 62.363934
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.310535
+scale = Vector2(0.6945328, 0.7792089)
+pivot_offset = Vector2(30.741787, -24.363928)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII12" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=616640761]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.305176
+offset_top = -12.50132
+offset_right = -8.305176
+offset_bottom = 24.49868
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.9330997
+scale = Vector2(0.6945328, 0.7792089)
+pivot_offset = Vector2(59.305176, 13.50132)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "+"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII7" type="Label" parent="Animation/AnimatedExplosion_/frame2" unique_id=1970044425]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = -13.0
+offset_right = 26.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "%"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Node2D" type="Node2D" parent="Animation/AnimatedExplosion_/frame2" unique_id=1406321618]
+
+[node name="ASCII8" type="Label" parent="Animation/AnimatedExplosion_/frame2/Node2D" unique_id=199814923]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -16.516235
+offset_right = 5.0
+offset_bottom = 20.483765
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "( "
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII9" type="Label" parent="Animation/AnimatedExplosion_/frame2/Node2D" unique_id=1651998013]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -16.516235
+offset_right = 5.0
+offset_bottom = 20.483765
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.4190055
+pivot_offset = Vector2(47, 20)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "( "
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII10" type="Label" parent="Animation/AnimatedExplosion_/frame2/Node2D" unique_id=1527392926]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -16.516235
+offset_right = 5.0
+offset_bottom = 20.483765
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.6189246
+pivot_offset = Vector2(47, 20)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "( "
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII11" type="Label" parent="Animation/AnimatedExplosion_/frame2/Node2D" unique_id=1026125527]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -16.516235
+offset_right = 5.0
+offset_bottom = 20.483765
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.9878693
+pivot_offset = Vector2(47, 20)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "( "
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII12" type="Label" parent="Animation/AnimatedExplosion_/frame2/Node2D" unique_id=2126635499]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.0
+offset_top = -16.516235
+offset_right = 5.0
+offset_bottom = 20.483765
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 4.9640775
+pivot_offset = Vector2(47, 20)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "( "
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="frame3" type="Node2D" parent="Animation/AnimatedExplosion_" unique_id=811194711]
+visible = false
+
+[node name="ascii" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1767295038]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -67.0
+offset_top = -15.0
+offset_right = -17.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "("
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ascii2" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1550318078]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.000002
+offset_top = -80.0
+offset_right = 25.999998
+offset_bottom = -43.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.728626
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "("
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ascii3" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1885429155]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 85.0
+offset_top = -29.0
+offset_right = 135.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.5526094
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "("
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ascii4" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=991666963]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 56.0
+offset_top = 57.999992
+offset_right = 106.0
+offset_bottom = 94.99999
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.7112617
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "("
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII16" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=2082420187]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 43.000008
+offset_top = -46.999996
+offset_right = 93.00001
+offset_bottom = -9.999996
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.8541865
+pivot_offset = Vector2(24.723385, 10.60865)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII17" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1958153106]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 77.000015
+offset_right = 127.000015
+offset_bottom = 37.000008
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.8541865
+pivot_offset = Vector2(24.723385, 10.60865)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII19" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1639281483]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.999994
+offset_top = -11.0
+offset_right = 34.000008
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.8541865
+pivot_offset = Vector2(24.723385, 10.60865)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "*"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII18" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1788278694]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.99999
+offset_top = -78.0
+offset_right = -22.999992
+offset_bottom = -41.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.6140581
+pivot_offset = Vector2(24.723385, 10.60865)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "´"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII20" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=439897044]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.1379
+offset_top = -0.7589226
+offset_right = -35.1379
+offset_bottom = 36.241077
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.14205599
+scale = Vector2(0.55895823, 0.6987107)
+pivot_offset = Vector2(92.13789, -3.2410789)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII21" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1810879796]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.42044
+offset_top = -55.468925
+offset_right = -54.42044
+offset_bottom = -18.468918
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.14205599
+scale = Vector2(0.55895835, 0.6987107)
+pivot_offset = Vector2(111.42042, 51.468925)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII23" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1305387220]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -78.66482
+offset_top = 43.357826
+offset_right = -28.664818
+offset_bottom = 80.35783
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.0980724
+scale = Vector2(0.55895823, 0.6987106)
+pivot_offset = Vector2(85.66482, -47.35781)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "´"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII22" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1660096467]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.1379
+offset_top = -0.7589226
+offset_right = -35.1379
+offset_bottom = 36.241077
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.3918493
+scale = Vector2(0.55895823, 0.6987107)
+pivot_offset = Vector2(92.13789, -3.2410789)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII24" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=632246765]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.42044
+offset_top = -55.468925
+offset_right = -54.42044
+offset_bottom = -18.468918
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.3918493
+scale = Vector2(0.55895835, 0.6987107)
+pivot_offset = Vector2(111.42042, 51.468925)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII25" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1493829342]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -78.66482
+offset_top = 43.357826
+offset_right = -28.664818
+offset_bottom = 80.35783
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.1517209
+scale = Vector2(0.55895823, 0.6987106)
+pivot_offset = Vector2(85.66482, -47.35781)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "´"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII26" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=1640241276]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -85.1379
+offset_top = -0.7589226
+offset_right = -35.1379
+offset_bottom = 36.241077
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 5.2840753
+scale = Vector2(0.6148085, 0.7299425)
+pivot_offset = Vector2(92.13789, -3.2410789)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII27" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=2027358013]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.42044
+offset_top = -55.468925
+offset_right = -54.42044
+offset_bottom = -18.468918
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 5.2840753
+scale = Vector2(0.6148087, 0.7299425)
+pivot_offset = Vector2(111.42042, 51.468925)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII28" type="Label" parent="Animation/AnimatedExplosion_/frame3" unique_id=358331988]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -78.66482
+offset_top = 43.357826
+offset_right = -28.664818
+offset_bottom = 80.35783
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 4.0439467
+scale = Vector2(0.6148087, 0.72994244)
+pivot_offset = Vector2(85.66482, -47.35781)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "´"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="frame4" type="Node2D" parent="Animation/AnimatedExplosion_" unique_id=444811994]
+visible = false
+
+[node name="ASCII2" type="Label" parent="Animation/AnimatedExplosion_/frame4" unique_id=1034889397]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 31.0
+offset_top = -39.0
+offset_right = 81.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.2098594
+pivot_offset = Vector2(25, 18)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "'"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII5" type="Label" parent="Animation/AnimatedExplosion_/frame4" unique_id=1814398388]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = 8.999996
+offset_right = -14.0
+offset_bottom = 45.999996
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.0382767
+pivot_offset = Vector2(25, 18)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "'"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII6" type="Label" parent="Animation/AnimatedExplosion_/frame4" unique_id=820263174]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -91.0
+offset_top = -54.0
+offset_right = -41.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.7970911
+pivot_offset = Vector2(25, 18)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "´"
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII3" type="Label" parent="Animation/AnimatedExplosion_/frame4" unique_id=2042836901]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -41.0
+offset_top = -61.0
+offset_right = 9.0
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.69667405
+pivot_offset = Vector2(25, 28)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ASCII4" type="Label" parent="Animation/AnimatedExplosion_/frame4" unique_id=750319218]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 17.0
+offset_top = -38.0
+offset_right = 67.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.69667405
+pivot_offset = Vector2(25, 28)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = -5
+theme_override_font_sizes/font_size = 20
+text = "."
+label_settings = ExtResource("2_navh2")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=1395564528]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(256, 256)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=298218983]
+position = Vector2(147, 146)
+texture = SubResource("ViewportTexture_3qcis")

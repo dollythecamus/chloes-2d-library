@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://d3eaw75d7vnx3"]
+
+[ext_resource type="Script" uid="uid://c6dfbqtxdsrou" path="res://dialogue/UI/choice.gd" id="1_7knxx"]
+[ext_resource type="FontFile" uid="uid://ddjnttt5rsjoc" path="res://assets/fonts/FreeMono.ttf" id="1_n30sw"]
+[ext_resource type="Theme" uid="uid://6tcrllplf7jh" path="res://assets/UI/choices_button.tres" id="2_k0v0h"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_n30sw"]
+line_spacing = 2.0
+font = ExtResource("1_n30sw")
+font_size = 14
+
+[node name="ChoiceUi" type="Node2D" unique_id=2146564991]
+visible = false
+script = ExtResource("1_7knxx")
+
+[node name="poly" type="Polygon2D" parent="." unique_id=657165161]
+color = Color(0.07450981, 0.06666667, 0.08627451, 1)
+polygon = PackedVector2Array(152, 48, 152, 8, -152, 8, -152, 48)
+
+[node name="Label" type="Label" parent="." unique_id=1633560045]
+offset_left = -136.0
+offset_top = 8.0
+offset_right = 152.0
+offset_bottom = 48.0
+label_settings = SubResource("LabelSettings_n30sw")
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=95919376]
+offset_left = -152.0
+offset_top = 8.0
+offset_right = 152.0
+offset_bottom = 48.0
+focus_mode = 0
+theme = ExtResource("2_k0v0h")
