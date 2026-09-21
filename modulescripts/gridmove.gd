@@ -4,7 +4,7 @@ class_name GridMove
 @export var to_parent = true
 @onready var n : Node2D = get_parent() if to_parent else self
 
-const grid_size = Vector2i(24, 19) 
+const grid_size = Vector2i(25, 25) * 4 # temporary scale factor
 static var width  = 20
 static var height = 20
 
@@ -89,6 +89,22 @@ func set_occupied(occ : bool, gp = grid_position):
 	if gp.x >= width or gp.y >= height:
 		return
 	occupied_grid[occupied_grid_layer][gp.x][gp.y] = occ
+
+func try_move_to(dir : Vector2i):
+	var gp = grid_position + dir
+	
+	if is_occupied(gp):
+		return
+
+	grid_position = gp
+	virtual_position = grid_to_global(grid_position)
+	n.global_position = virtual_position
+
+func cardinal(dir : Vector2) -> Vector2i:
+	if abs(dir.x) > (abs(dir.y)):
+		return Vector2i(sign(dir.x), 0)
+	else:
+		return Vector2i(0, sign(dir.y))
 
 # okays
 func is_occupied(gp = grid_position, layer_ = occupied_grid_layer):
